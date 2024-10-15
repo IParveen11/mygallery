@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="image-thumbnails">
+            <img src="image1.jpg" alt="Image 1" data-caption="Beautiful Landscape" data-index="0">
+            <img src="image2.jpg" alt="Image 2" data-caption="City Skyline" data-index="1">
+            <img src="image3.jpg" alt="Image 3" data-caption="Serene Lake" data-index="2">
+            <!-- Add more images here -->
+        </div>
+    </div>
+
+    <!-- Modal for lightbox effect -->
+    <div class="modal" id="lightbox">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modal-image">
+        <div class="caption" id="modal-caption"></div>
+        <button class="prev" id="prev-button">&lt;</button>
+        <button class="next" id="next-button">&gt;</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
